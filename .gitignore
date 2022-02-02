@@ -1,0 +1,6 @@
+*.sql
+*.sqlite3
+
+posts/__pycache__/
+potrip/__pycache__/
+posts/migrations/
