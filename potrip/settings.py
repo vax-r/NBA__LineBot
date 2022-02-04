@@ -11,6 +11,11 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
+# from config import LINE_CHANNEL_ACCESS_TOKEN,LINE_CHANNEL_SECRET
+from . import config
+
+LINE_CHANNEL_ACCESS_TOKEN = config.LINE_CHANNEL_ACCESS_TOKEN
+LINE_CHANNEL_SECRET = config.LINE_CHANNEL_SECRET
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,12 +31,13 @@ SECRET_KEY = 'django-insecure-)upjo0@lyuknwoe!g(81l43tome4xx&2kv0^9d&3sk0wb^c2o^
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '8d3a-2400-8901-00-f03c-91ff-fe39-a7eb.ngrok.io'
+    '8d3a-2400-8901-00-f03c-91ff-fe39-a7eb.ngrok.io',
+    '9d45-2400-8901-00-f03c-91ff-fe39-a7eb.ngrok.io'
 ]
 
-LINE_CHANNEL_ACCESS_TOKEN = '3hZQUWU9QwOnKZo2uDhBGAcAwNYBO7sCZrojdlnPNJSwvBNVpaSrFVQBYX6DHMFx8blmtyyK0Ps+7fFP6AD2x2QBRTrYxgKrts2Rsi/foIyySEbhl4VtEOJ3KfWG0m9PCuICq64jkafcgEa0aTLbQQdB04t89/1O/w1cDnyilFU='
+# LINE_CHANNEL_ACCESS_TOKEN = '3hZQUWU9QwOnKZo2uDhBGAcAwNYBO7sCZrojdlnPNJSwvBNVpaSrFVQBYX6DHMFx8blmtyyK0Ps+7fFP6AD2x2QBRTrYxgKrts2Rsi/foIyySEbhl4VtEOJ3KfWG0m9PCuICq64jkafcgEa0aTLbQQdB04t89/1O/w1cDnyilFU='
 
-LINE_CHANNEL_SECRET = '4f3ad4de97e3ffbaea3c66b631cc2c93'
+# LINE_CHANNEL_SECRET = '4f3ad4de97e3ffbaea3c66b631cc2c93'
 
 # Application definition
 

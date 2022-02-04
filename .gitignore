@@ -4,3 +4,5 @@
 posts/__pycache__/
 potrip/__pycache__/
 posts/migrations/
+
+potrip/config.py
